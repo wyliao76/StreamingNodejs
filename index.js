@@ -22,7 +22,7 @@ const server = app.listen(3000)
     console.info('app listening at http://%s:%s', address, port)
   })
   .on('error', (err) => {
-    console.error({ message: `TM Service ${err}`, prefix: 'service' })
+    console.error(`Service ${err}`)
   })
 
   const uploadFile = (req, filePath) => {
